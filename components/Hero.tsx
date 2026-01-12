@@ -33,9 +33,11 @@ export const Hero: React.FC = () => {
         <p className="text-xl sm:text-2xl text-energy-200 font-light tracking-wide mb-12">
           Energy is the True Currency
         </p>
+      </Container>
 
-        {/* Tweet Embeds */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 w-full max-w-[98%] xl:max-w-[1600px] mx-auto px-2 lg:px-6">
+      {/* Tweet Embeds - Outside Container for Full Width */}
+      <div className="w-full px-4 lg:px-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[98%] xl:max-w-[1800px] mx-auto">
           {/* Tweet 1 - @cz_binance */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 w-full">
             <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
@@ -62,7 +64,9 @@ export const Hero: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
 
+      <Container className="relative z-10 flex flex-col items-center text-center">
         {/* Video */}
         <div className="w-full max-w-4xl mx-auto rounded-2xl p-1 bg-gradient-to-b from-white/10 to-transparent backdrop-blur-sm">
           <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-900 border border-white/5 shadow-2xl">
