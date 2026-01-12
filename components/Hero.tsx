@@ -35,12 +35,12 @@ export const Hero: React.FC = () => {
         </p>
       </Container>
 
-      {/* Tweet Embeds - Outside Container for Full Width */}
+      {/* Tweet Embeds */}
       <div className="w-full px-4 lg:px-8 mb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-[98%] xl:max-w-[1800px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
           {/* Tweet 1 - @cz_binance */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 w-full">
-            <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
+            <div className="relative w-full h-[500px] md:h-[550px]">
               <iframe
                 src={TWEET_1_EMBED}
                 title="@cz_binance Tweet"
@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
 
           {/* Tweet 2 - @XScharo */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 w-full">
-            <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
+            <div className="relative w-full h-[500px] md:h-[550px]">
               <iframe
                 src={TWEET_2_EMBED}
                 title="@XScharo Tweet"
