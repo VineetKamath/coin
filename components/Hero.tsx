@@ -35,10 +35,10 @@ export const Hero: React.FC = () => {
         </p>
 
         {/* Tweet Embeds */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 w-full max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 w-full max-w-7xl mx-auto">
           {/* Tweet 1 - @cz_binance */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
-            <div className="relative w-full h-[400px] md:h-[500px]">
+            <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
               <iframe
                 src={TWEET_1_EMBED}
                 title="@cz_binance Tweet"
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
 
           {/* Tweet 2 - @XScharo */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
-            <div className="relative w-full h-[400px] md:h-[500px]">
+            <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
               <iframe
                 src={TWEET_2_EMBED}
                 title="@XScharo Tweet"
