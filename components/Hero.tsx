@@ -1,5 +1,4 @@
 import React from 'react';
-import { Zap, Play } from 'lucide-react';
 import { Container } from './ui/Container';
 import { TWEET_1_EMBED, TWEET_2_EMBED } from '../constants';
 
@@ -65,22 +64,6 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Container className="relative z-10 flex flex-col items-center text-center">
-        {/* Video */}
-        <div className="w-full max-w-4xl mx-auto rounded-2xl p-1 bg-gradient-to-b from-white/10 to-transparent backdrop-blur-sm">
-          <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-900 border border-white/5 shadow-2xl">
-            <iframe
-              src="https://streamable.com/e/9jm3br"
-              title="$ENERGY video"
-              className="w-full h-full"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-
-      </Container>
     </section>
   );
 };
