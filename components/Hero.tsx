@@ -1,7 +1,7 @@
 import React from 'react';
-import { Zap, Play, Twitter, ExternalLink } from 'lucide-react';
+import { Zap, Play } from 'lucide-react';
 import { Container } from './ui/Container';
-import { TWEET_1_URL, TWEET_2_URL } from '../constants';
+import { TWEET_1_EMBED, TWEET_2_EMBED } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
@@ -34,39 +34,33 @@ export const Hero: React.FC = () => {
           Energy is the True Currency
         </p>
 
-        {/* Tweet Bubbles */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8 w-full max-w-4xl mx-auto">
-          <a
-            href={TWEET_1_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="group relative flex items-center gap-3 px-6 py-4 bg-slate-900/80 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-energy-500/50 hover:bg-slate-800/80 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)]"
-          >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
-              <Twitter className="w-5 h-5 text-white fill-white" />
+        {/* Tweet Embeds */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 w-full max-w-6xl mx-auto">
+          {/* Tweet 1 - @cz_binance */}
+          <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
+            <div className="relative w-full h-[400px] md:h-[500px]">
+              <iframe
+                src={TWEET_1_EMBED}
+                title="@cz_binance Tweet"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                scrolling="no"
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold text-white">@cz_binance</span>
-              <span className="text-xs text-slate-400">View Tweet</span>
-            </div>
-            <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-energy-400 transition-colors ml-2" />
-          </a>
+          </div>
 
-          <a
-            href={TWEET_2_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="group relative flex items-center gap-3 px-6 py-4 bg-slate-900/80 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-energy-500/50 hover:bg-slate-800/80 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)]"
-          >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-energy-500 to-blue-500 flex items-center justify-center flex-shrink-0">
-              <Twitter className="w-5 h-5 text-white fill-white" />
+          {/* Tweet 2 - @XScharo */}
+          <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
+            <div className="relative w-full h-[400px] md:h-[500px]">
+              <iframe
+                src={TWEET_2_EMBED}
+                title="@XScharo Tweet"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                scrolling="no"
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold text-white">@XScharo</span>
-              <span className="text-xs text-slate-400">View Tweet</span>
-            </div>
-            <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-energy-400 transition-colors ml-2" />
-          </a>
+          </div>
         </div>
 
         {/* Video */}
