@@ -1,6 +1,7 @@
 import React from 'react';
-import { Zap, Play } from 'lucide-react';
+import { Zap, Play, Twitter, ExternalLink } from 'lucide-react';
 import { Container } from './ui/Container';
+import { TWEET_1_URL, TWEET_2_URL } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
@@ -32,6 +33,41 @@ export const Hero: React.FC = () => {
         <p className="text-xl sm:text-2xl text-energy-200 font-light tracking-wide mb-12">
           Energy is the True Currency
         </p>
+
+        {/* Tweet Bubbles */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8 w-full max-w-4xl mx-auto">
+          <a
+            href={TWEET_1_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center gap-3 px-6 py-4 bg-slate-900/80 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-energy-500/50 hover:bg-slate-800/80 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)]"
+          >
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+              <Twitter className="w-5 h-5 text-white fill-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold text-white">@cz_binance</span>
+              <span className="text-xs text-slate-400">View Tweet</span>
+            </div>
+            <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-energy-400 transition-colors ml-2" />
+          </a>
+
+          <a
+            href={TWEET_2_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="group relative flex items-center gap-3 px-6 py-4 bg-slate-900/80 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-energy-500/50 hover:bg-slate-800/80 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)]"
+          >
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-energy-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+              <Twitter className="w-5 h-5 text-white fill-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold text-white">@XScharo</span>
+              <span className="text-xs text-slate-400">View Tweet</span>
+            </div>
+            <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-energy-400 transition-colors ml-2" />
+          </a>
+        </div>
 
         {/* Video */}
         <div className="w-full max-w-4xl mx-auto rounded-2xl p-1 bg-gradient-to-b from-white/10 to-transparent backdrop-blur-sm">
