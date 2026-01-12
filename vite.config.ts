@@ -6,8 +6,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    // GitHub Pages repo: https://<user>.github.io/coin/  → base must be "/coin/"
-    base: '/coin/',
+    // Site is served from the domain root (GitHub Pages with custom domain like bnbenergycoin.xyz)
+    base: '/',
     server: {
       port: 3000,
       host: '0.0.0.0',
