@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
         </p>
 
         {/* Tweet Embeds */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 w-full max-w-[95%] lg:max-w-[1400px] mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 w-full max-w-[98%] xl:max-w-[1600px] mx-auto px-2 lg:px-6">
           {/* Tweet 1 - @cz_binance */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 w-full">
             <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px]">
